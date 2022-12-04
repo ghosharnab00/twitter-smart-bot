@@ -1,0 +1,5 @@
+[build]
+    functions = "dist/"
+    schedule = "@hourly"
+    command = "npm run build:lambda"
+    
