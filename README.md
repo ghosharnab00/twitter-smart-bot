@@ -10,7 +10,7 @@ This is not your ordinary bot. This is a smart bot that reads tweets in your tim
 
 <img src="public/engagement.png" data-canonical-src="public/engagement.png" width="250" />
 <img src="public/retweetengagement.jpeg" data-canonical-src="public/retweetengagement.png" width="250" />
-<img src="public/stats.jpeg" data-canonical-src="public/stats.png" width="250" />
+<img src="public/stats.png" data-canonical-src="public/stats.png" width="250" />
 
 
 
