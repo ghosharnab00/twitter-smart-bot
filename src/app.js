@@ -4,7 +4,6 @@ const {
   OpenAIApi
 } = require('openai');
 const {TwitterApi} = require('twitter-api-v2');
-const { schedule } = require('@netlify/functions')
 
 
 
@@ -17,7 +16,6 @@ const userClient = new TwitterApi({
 
 const rwClient = userClient.readWrite;
 
-// const v1Client = rwClient.v1;
 const v2Client = rwClient.v2;
 
 const openAIconfiguration = new Configuration({
@@ -27,10 +25,10 @@ const openai = new OpenAIApi(openAIconfiguration);
 
 
 
-exports.handler = schedule("@hourly",async (event, context) => {
+exports.handler = async (event, context) => {
 
   const result = []
-  const tweets = await v2Client.homeTimeline({ exclude: ['replies','retweets'],max_results:5 });
+  const tweets = await v2Client.listTweets(process.env.LISTID, {max_results:5 });
   
   // listTweets(process.env.LISTID, {max_results:5} );
 
@@ -38,7 +36,7 @@ exports.handler = schedule("@hourly",async (event, context) => {
   // console.log(tweets.data.data)
   tweets.data.data.forEach(tweet=>{
 
-    if (tweet.text.includes("https")){
+    if (tweet.text.includes("https") && tweet.text.includes("@")){
       return;
     }
     else{
@@ -94,7 +92,7 @@ exports.handler = schedule("@hourly",async (event, context) => {
       'Access-Control-Allow-Origin': '*',
     },
   }
-});
+};
 
 
 
