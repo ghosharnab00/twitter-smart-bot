@@ -9,7 +9,8 @@ This is not your ordinary bot. This is a smart bot that reads tweets in your tim
 ## Results
 
 <img src="public/engagement.png" data-canonical-src="public/engagement.png" width="250" />
-<img src="public/retweetengagement.jpeg" data-canonical-src="public/engagement.png" width="250" />
+<img src="public/retweetengagement.jpeg" data-canonical-src="public/retweetengagement.png" width="250" />
+<img src="public/stats.jpeg" data-canonical-src="public/stats.png" width="250" />
 
 
 
@@ -49,7 +50,7 @@ ACCESS_TOKEN_SECRET=""
 OPENAI_KEY=""
 ```
 * Step 6: The endpoint is: ```https://yourwebsite.netlify.com/.netlify/functions/app```
-* Step 5: Go to https://cron-job.org/ and set a cronjob to call the api endpoint according to your requirements. 
+* Step 5: Go to https://cron-job.org/ and set a cronjob to call the api 
 ### Installation on Local Machine
 
 * Clone the repo from this website, then
