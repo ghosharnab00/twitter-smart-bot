@@ -29,11 +29,6 @@ exports.handler = async (event, context) => {
 
   const result = []
   const tweets = await v2Client.listTweets(process.env.LISTID, {max_results:5 });
-  
-  // listTweets(process.env.LISTID, {max_results:5} );
-
-
-  // console.log(tweets.data.data)
   tweets.data.data.forEach(tweet=>{
 
     if (tweet.text.includes("https") && tweet.text.includes("@")){
@@ -59,9 +54,8 @@ exports.handler = async (event, context) => {
       presence_penalty: 0,
     })
 
-    console.log(sentiment.data.choices[0])
+    console.log(sentiment.data.choices[0].text)
   
-
     const reply = await openai.createCompletion({
                 model: "text-davinci-003",
                 prompt: `Give a ${sentiment.data.choices[0].text} one-sentence reply to the tweet.\n\n${result[0].tweet.replace(/\n/g, '')}`,
@@ -71,7 +65,7 @@ exports.handler = async (event, context) => {
                 frequency_penalty: 0,
                 presence_penalty: 0,
               })
-              console.log(reply.data.choices[0]);
+              console.log(reply.data.choices[0].text);
 
   
               await v2Client.reply(
