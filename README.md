@@ -50,7 +50,7 @@ ACCESS_TOKEN_SECRET=""
 OPENAI_KEY=""
 ```
 * Step 6: The endpoint is: ```https://yourwebsite.netlify.com/.netlify/functions/app```
-* Step 5: Go to https://cron-job.org/ and set a cronjob to call the api 
+* Step 5: Go to https://cron-job.org/ and set a cronjob to call the api every hour or 2 hours depending on your choice
 ### Installation on Local Machine
 
 * Clone the repo from this website, then
