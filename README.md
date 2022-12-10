@@ -32,7 +32,7 @@ This is not your ordinary bot. This is a smart bot that reads tweets in your tim
 
 Use the following button to deploy it directly on netlify.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ghosharnab00/twitter-bot-smart)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ghosharnab00/twitter-smart-bot)
 
 
 ### Add the following enviorentment variables. 
