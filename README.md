@@ -40,7 +40,7 @@ Use the following button to deploy it directly on netlify.
 * Step 1: Log in to https://developer.twitter.com and create an project and app. 
 * Step 2: Get "Client ID", "Client_secret", "Access_Token", and "Access_Token_Id" from the app.
 * Step 3: Create Account on openai and get the access token.
-* Step 4: Add thoese as `env variables`.
+* Step 4: Add thoese as `enviornment variables`.
 
 ```
 TWITTER_ID=""
