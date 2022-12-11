@@ -58,7 +58,7 @@ LISTID=""
 * Clone the repo from this website, then
 * In command line:
   * ```$ git clone https://github.com/ghosharnab00/twitter-smart-bot```
-  * ```$ cd pomo-do```
+  * ```$ cd twitter-smart-bot```
   * ```$ npm install```
   * ```$ netlify dev```
 
