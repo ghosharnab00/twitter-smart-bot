@@ -40,6 +40,7 @@ Use the following button to deploy it directly on netlify.
 * Step 1: Log in to https://developer.twitter.com and create an project and app. 
 * Step 2: Get "Client ID", "Client_secret", "Access_Token", and "Access_Token_Id" from the app for V2 API.
 * Step 3: Create Account on openai and get the access token.
+* Step 4: Get your curated Twitter list id. 
 * Step 4: Add thoese as `enviornment variables`.
 
 ```
@@ -48,6 +49,7 @@ TWITTER_SECRET=""
 ACCESS_TOKEN=""
 ACCESS_TOKEN_SECRET=""
 OPENAI_KEY=""
+LISTID=""
 ```
 * Step 6: The endpoint is: ```https://yourwebsite.netlify.com/.netlify/functions/app```
 * Step 5: Go to https://cron-job.org/ and set a cronjob to call the api every hour or 2 hours depending on your choice
