@@ -1,4 +1,4 @@
-# engage-bot: Your smart Twitter Engagement Expert
+# engage.ai: Your smart Twitter Engagement Expert
 
 This is not your ordinary bot. This is a smart bot that reads tweets in your timeline, understands it's intent, and then gives a fitting reply to it. 
 
