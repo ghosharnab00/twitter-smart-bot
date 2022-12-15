@@ -44,9 +44,10 @@ exports.handler = async (event, context) => {
     }
   })
 
+  
     const sentiment = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: `Decide whether a Tweet's sentiment is funny, sarcastic, informative, inspirational or soulful.\n\nTweet: \"${result[0].tweet}\"\nSentiment: `,
+      prompt: `Decide whether a Tweet's sentiment is funny, sarcastic, informative, inspirational or soulful, or promotional.\n\n##\nTweet: 10 Concepts For A Sharper Thinking Muscle:\nSentiment: Thread\n##\nTweet: To achieve Wealth and Financial Freedom, study these 8 ideas:\nSentiment: Thread\n##\nTweet: Here's how to prepare so your business survives:\nSentiment:    Thread\n##\nTweet: Here's why:\nSentiment:    Thread\n##\nTweet: ${result[0].tweet}\nSentiment:  `,
       temperature: 0,
       max_tokens: 60,
       top_p: 1,
