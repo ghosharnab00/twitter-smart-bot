@@ -79,7 +79,7 @@ exports.handler = async (event, context) => {
   } else {
     const reply = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: `Give a ${sentiment.data.choices[0].text} one-sentence engaging reply to the tweet.\n\n${result[0].tweet.replace(/\n/g, '')}`,
+      prompt: `Give a ${sentiment.data.choices[0].text} one-sentence reply to the tweet.\n\n${result[0].tweet.replace(/\n/g, '')}`,
       temperature: 1,
       max_tokens: 140,
       top_p: 1,
