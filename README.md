@@ -8,9 +8,9 @@ This is not your ordinary bot. This is a smart bot that reads tweets in your tim
 
 ## Results
 
-<img src="public/engagement.png" data-canonical-src="public/engagement.png" width="250" />
-<img src="public/retweetengagement.jpeg" data-canonical-src="public/retweetengagement.png" width="250" />
-<img src="public/stats.png" data-canonical-src="public/stats.png" width="500" />
+<img src="https://public-files.gumroad.com/ph9gwq6xoael1zgegphclj2y1vtr" data-canonical-src="public/engagement.png" width="250" />
+<img src="https://public-files.gumroad.com/oy8ohu4mjgdoxqh551fv60yxclam" data-canonical-src="public/retweetengagement.png" width="250" />
+
 
 
 
